@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" xmlns:spatial="http://www.sbml.org/sbml/level3/version1/spatial/version1" level="3" spatial:required="true" version="1">
+   <model areaUnits="um2" id="CellOrganizer2_7" lengthUnits="um" name="CellOrganizer2_7" substanceUnits="molecules" timeUnits="s" volumeUnits="um3">
+      <spatial:geometry spatial:coordinateSystem="cartesian">
+         <spatial:listOfAdjacentDomains>
+            <spatial:adjacentDomains id="cell1_nuc1" spatial:domain1="cell1" spatial:domain2="nuc1" spatial:id="cell1_nuc1"/>
+         </spatial:listOfAdjacentDomains>
+         <spatial:listOfCoordinateComponents>
+            <spatial:coordinateComponent id="x" spatial:id="x" spatial:type="cartesianX" spatial:unit="um">
+               <spatial:boundaryMin id="Xmin" spatial:id="Xmin" spatial:value="0"/>
+               <spatial:boundaryMax id="Xmax" spatial:id="Xmax" spatial:value="6.517"/>
+            </spatial:coordinateComponent>
+            <spatial:coordinateComponent id="y" spatial:id="y" spatial:type="cartesianY" spatial:unit="um">
+               <spatial:boundaryMin id="Ymin" spatial:id="Ymin" spatial:value="-10"/>
+               <spatial:boundaryMax id="Ymax" spatial:id="Ymax" spatial:value="10"/>
+            </spatial:coordinateComponent>
+            <spatial:coordinateComponent id="z" spatial:id="z" spatial:type="cartesianZ" spatial:unit="um">
+               <spatial:boundaryMin id="Zmin" spatial:id="Zmin" spatial:value="-10"/>
+               <spatial:boundaryMax id="Zmax" spatial:id="Zmax" spatial:value="10"/>
+            </spatial:coordinateComponent>
+         </spatial:listOfCoordinateComponents>
+         <spatial:listOfDomains>
+            <spatial:domain id="nuc_domain" spatial:domainType="nuc_domainType" spatial:id="nuc_domain">
+               <spatial:listOfInteriorPoints>
+                  <spatial:interiorPoint spatial:coord1="1.96" spatial:coord2="2.352" spatial:coord3="0.049"/>
+               </spatial:listOfInteriorPoints>
+            </spatial:domain>
+            <spatial:domain id="cell_domain" spatial:domainType="cell_domainType" spatial:id="cell_domain">
+               <spatial:listOfInteriorPoints>
+                  <spatial:interiorPoint spatial:coord1="0.343" spatial:coord2="5.047" spatial:coord3="0.049"/>
+               </spatial:listOfInteriorPoints>
+            </spatial:domain>
+            <spatial:domain id="EC_domain" spatial:domainType="EC_domainType" spatial:id="EC_domain">
+               <spatial:listOfInteriorPoints>
+                  <spatial:interiorPoint spatial:coord1="0.049" spatial:coord2="0.049" spatial:coord3="0.049"/>
+               </spatial:listOfInteriorPoints>
+            </spatial:domain>
+         </spatial:listOfDomains>
+         <spatial:listOfDomainTypes>
+            <spatial:domainType id="nuc_domainType" spatial:id="nuc_domainType" spatial:spatialDimensions="3"/>
+            <spatial:domainType id="cell_domainType" spatial:id="cell_domainType" spatial:spatialDimensions="3"/>
+            <spatial:domainType id="EC_domainType" spatial:id="EC_domainType" spatial:spatialDimensions="3"/>
+         </spatial:listOfDomainTypes>
+         <spatial:listOfGeometryDefinitions>
+            <spatial:sampledFieldGeometry id="universal_sampledFieldGeometry" spatial:id="universal_sampledFieldGeometry" spatial:isActive="true" spatial:sampledField="universal_sampledField">
+               <spatial:listOfSampledVolumes>
+                  <spatial:sampledVolume id="nuc_sampledVolume" spatial:domainType="nuc_domainType" spatial:id="nuc_sampledVolume" spatial:maxValue="3.5" spatial:minValue="2.5" spatial:sampledValue="3"/>
+                  <spatial:sampledVolume id="cell_sampledVolume" spatial:domainType="cell_domainType" spatial:id="cell_sampledVolume" spatial:maxValue="2.5" spatial:minValue="1.5" spatial:sampledValue="2"/>
+                  <spatial:sampledVolume id="EC_sampledVolume" spatial:domainType="EC_domainType" spatial:id="EC_sampledVolume" spatial:maxValue="1.5" spatial:minValue="0.5" spatial:sampledValue="1"/>
+               </spatial:listOfSampledVolumes>
+            </spatial:sampledFieldGeometry>
+         </spatial:listOfGeometryDefinitions>
+         <spatial:listOfSampledFields>
+            <spatial:sampledField id="universal_sampledField" spatial:compression="uncompressed" spatial:dataType="uint8" spatial:id="universal_sampledField" spatial:interpolationType="nearestneighbor" spatial:numSamples1="8" spatial:numSamples2="8" spatial:numSamples3="36" spatial:samplesLength="2304">1 1 1 1 2 1 1 1 1 1 2 2 2 2 1 1 1 2 2 3 3 3 2 2 1 2 3 3 3 3 3 1 2 2 2 3 3 3 1 1 2 2 2 2 2 1 1 1 1 2 2 2 1 1 1 1 1 2 1 1 1 1 1 1 1 1 1 1 2 1 1 1 1 1 2 2 2 2 1 1 1 2 2 3 3 3 2 2 1 2 3 3 3 3 3 1 2 2 2 3 3 3 1 1 2 2 2 2 2 1 1 1 1 2 2 2 1 1 1 1 1 2 1 1 1 1 1 1 1 1 1 1 2 1 1 1 1 1 2 2 3 2 1 1 1 2 3 3 3 3 3 2 1 2 3 3 3 3 3 1 2 2 2 3 3 3 1 1 2 2 2 2 2 1 1 1 1 2 2 2 1 1 1 1 1 2 1 1 1 1 1 1 1 1 1 1 2 1 1 1 1 1 2 2 3 2 1 1 1 2 3 3 3 3 3 2 1 2 3 3 3 3 3 1 2 2 2 3 3 3 1 1 2 2 2 2 2 1 1 1 1 2 2 2 1 1 1 1 1 2 1 1 1 1 1 1 1 1 1 1 2 1 1 1 1 1 2 2 3 2 1 1 1 2 3 3 3 3 3 2 1 2 3 3 3 3 3 1 2 2 2 3 3 3 1 1 2 2 2 2 2 1 1 1 1 2 2 2 1 1 1 1 1 2 1 1 1 1 1 1 1 1 1 1 2 1 1 1 1 1 2 2 3 2 1 1 1 2 3 3 3 3 3 2 1 2 3 3 3 3 3 1 2 2 2 3 3 3 1 1 2 2 2 2 2 1 1 1 1 2 2 2 1 1 1 1 1 2 1 1 1 1 1 1 1 1 1 1 2 1 1 1 1 1 2 2 3 2 1 1 1 2 3 3 3 3 3 2 1 2 3 3 3 3 3 1 2 2 2 3 3 3 1 1 2 2 2 2 2 1 1 1 1 2 2 2 1 1 1 1 1 2 1 1 1 1 1 1 1 1 1 1 2 1 1 1 1 1 2 2 3 2 1 1 1 2 3 3 3 3 3 2 1 2 3 3 3 3 3 1 2 2 2 3 3 3 1 1 2 2 2 2 2 1 1 1 1 2 2 2 1 1 1 1 1 2 1 1 1 1 1 1 1 1 1 1 2 1 1 1 1 1 2 2 3 2 1 1 1 2 3 3 3 3 3 2 1 2 3 3 3 3 3 1 2 2 2 3 3 3 1 1 2 2 2 2 2 1 1 1 1 2 2 2 1 1 1 1 1 2 1 1 1 1 1 1 1 1 1 1 2 1 1 1 1 1 2 2 3 2 1 1 1 2 3 3 3 3 3 2 1 2 3 3 3 3 3 1 2 2 2 3 3 3 1 1 2 2 2 2 2 1 1 1 1 2 2 2 1 1 1 1 1 2 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 2 3 2 1 1 1 1 3 3 3 3 3 1 1 2 3 3 3 3 3 1 1 2 2 3 3 3 1 1 1 2 2 2 2 1 1 1 1 2 2 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 2 3 2 1 1 1 1 3 3 3 3 3 1 1 2 3 3 3 3 3 1 1 2 2 3 3 3 1 1 1 2 2 2 2 1 1 1 1 2 2 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 2 3 2 1 1 1 1 3 3 3 3 3 1 1 2 3 3 3 3 3 1 1 2 2 3 3 3 1 1 1 2 2 2 2 1 1 1 1 2 2 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 2 3 2 1 1 1 1 3 3 3 3 3 1 1 2 3 3 3 3 3 1 1 2 2 3 3 3 1 1 1 2 2 2 2 1 1 1 1 2 2 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 2 3 2 1 1 1 1 2 3 3 3 3 1 1 2 3 3 3 3 3 1 1 2 2 3 3 3 1 1 1 2 2 2 2 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 2 3 2 1 1 1 1 2 3 3 3 3 1 1 2 3 3 3 3 3 1 1 2 2 3 3 3 1 1 1 2 2 2 2 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 2 3 2 1 1 1 1 2 3 3 3 3 1 1 2 3 3 3 3 3 1 1 2 2 3 3 3 1 1 1 2 2 2 2 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 2 3 2 1 1 1 1 2 3 3 3 3 1 1 2 3 3 3 3 3 1 1 2 2 3 3 3 1 1 1 2 2 2 2 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 2 2 2 1 1 1 1 2 3 3 3 2 1 1 2 2 3 3 3 3 1 1 2 2 2 3 2 1 1 1 1 2 2 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 2 2 2 1 1 1 1 2 3 3 3 2 1 1 2 2 3 3 3 3 1 1 2 2 2 3 2 1 1 1 1 2 2 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 2 2 2 1 1 1 1 2 3 3 3 2 1 1 2 2 3 3 3 3 1 1 2 2 2 3 2 1 1 1 1 2 2 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 2 2 2 1 1 1 1 2 3 3 3 2 1 1 2 2 3 3 3 3 1 1 2 2 2 3 2 1 1 1 1 2 2 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 2 2 1 1 1 1 1 2 3 3 3 2 1 1 1 2 3 3 3 2 1 1 1 2 2 2 2 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 2 2 1 1 1 1 1 2 3 3 3 2 1 1 1 2 3 3 3 2 1 1 1 2 2 2 2 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 2 2 1 1 1 1 1 2 3 3 3 2 1 1 1 2 3 3 3 2 1 1 1 2 2 2 2 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 2 2 1 1 1 1 1 2 3 3 3 2 1 1 1 2 3 3 3 2 1 1 1 2 2 2 2 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 2 2 1 1 1 1 1 2 2 3 2 2 1 1 1 2 2 3 3 2 1 1 1 2 2 2 2 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 2 2 1 1 1 1 1 2 2 3 2 2 1 1 1 2 2 3 3 2 1 1 1 2 2 2 2 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 2 2 1 1 1 1 1 2 2 3 2 2 1 1 1 2 2 3 3 2 1 1 1 2 2 2 2 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 2 2 1 1 1 1 1 2 2 3 2 2 1 1 1 2 2 3 3 2 1 1 1 2 2 2 2 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 2 2 1 1 1 1 1 2 2 3 2 2 1 1 1 2 2 3 2 2 1 1 1 1 2 2 2 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 2 2 1 1 1 1 1 2 2 3 2 2 1 1 1 2 2 3 2 2 1 1 1 1 2 2 2 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 2 2 1 1 1 1 1 2 2 3 2 2 1 1 1 2 2 3 2 2 1 1 1 1 2 2 2 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 2 2 1 1 1 1 1 2 2 3 2 2 1 1 1 2 2 3 2 2 1 1 1 1 2 2 2 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 2 1 1 1 1 1 2 2 2 2 1 1 1 1 2 2 2 2 2 1 1 1 1 2 2 2 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 2 1 1 1 1 1 2 2 2 2 1 1 1 1 2 2 2 2 2 1 1 1 1 2 2 2 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1</spatial:sampledField>
+         </spatial:listOfSampledFields>
+      </spatial:geometry>
+      <listOfUnitDefinitions>
+         <unitDefinition id="molecules">
+            <listOfUnits>
+               <unit exponent="1" kind="item" multiplier="1" scale="0"/>
+            </listOfUnits>
+         </unitDefinition>
+         <unitDefinition id="um3">
+            <listOfUnits>
+               <unit exponent="3" kind="metre" multiplier="1" scale="-6"/>
+            </listOfUnits>
+         </unitDefinition>
+         <unitDefinition id="um2">
+            <listOfUnits>
+               <unit exponent="2" kind="metre" multiplier="1" scale="-6"/>
+            </listOfUnits>
+         </unitDefinition>
+         <unitDefinition id="um">
+            <listOfUnits>
+               <unit exponent="1" kind="metre" multiplier="1" scale="-6"/>
+            </listOfUnits>
+         </unitDefinition>
+         <unitDefinition id="s">
+            <listOfUnits>
+               <unit exponent="1" kind="second" multiplier="1" scale="0"/>
+            </listOfUnits>
+         </unitDefinition>
+      </listOfUnitDefinitions>
+      <listOfCompartments>
+         <compartment constant="true" id="EC" name="EC" size="50000" spatialDimensions="3" units="um3">
+            <spatial:compartmentMapping id="ECEC" spatial:compartment="EC" spatial:domainType="EC_domainType" spatial:id="ECEC" spatial:unitSize="1"/>
+            <annotation>
+               <cellorganizer/>
+            </annotation>
+         </compartment>
+         <compartment constant="true" id="cell" name="cell" size="50000" spatialDimensions="3" units="um3">
+            <spatial:compartmentMapping id="cellcell" spatial:compartment="cell" spatial:domainType="cell_domainType" spatial:id="cellcell" spatial:unitSize="1"/>
+            <annotation>
+               <cellorganizer/>
+            </annotation>
+         </compartment>
+         <compartment constant="true" id="nuc" name="nuc" size="50000" spatialDimensions="3" units="um3">
+            <spatial:compartmentMapping id="nucnuc" spatial:compartment="nuc" spatial:domainType="nuc_domainType" spatial:id="nucnuc" spatial:unitSize="1"/>
+            <annotation>
+               <cellorganizer/>
+            </annotation>
+         </compartment>
+      </listOfCompartments>
+   </model>
+</sbml>

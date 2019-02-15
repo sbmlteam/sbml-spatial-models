@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" xmlns:spatial="http://www.sbml.org/sbml/level3/version1/spatial/version1" level="3" spatial:required="true" version="1">
+   <model areaUnits="um2" id="CellOrganizer2_7" lengthUnits="um" name="CellOrganizer2_7" substanceUnits="molecules" timeUnits="s" volumeUnits="um3">
+      <spatial:geometry spatial:coordinateSystem="cartesian">
+         <spatial:listOfCoordinateComponents>
+            <spatial:coordinateComponent spatial:id="x" spatial:type="cartesianX" spatial:unit="um">
+               <spatial:boundaryMin spatial:id="Xmin" spatial:value="0"/>
+               <spatial:boundaryMax spatial:id="Xmax" spatial:value="62.72"/>
+            </spatial:coordinateComponent>
+            <spatial:coordinateComponent spatial:id="y" spatial:type="cartesianY" spatial:unit="um">
+               <spatial:boundaryMin spatial:id="Ymin" spatial:value="-10"/>
+               <spatial:boundaryMax spatial:id="Ymax" spatial:value="10"/>
+            </spatial:coordinateComponent>
+            <spatial:coordinateComponent spatial:id="z" spatial:type="cartesianZ" spatial:unit="um">
+               <spatial:boundaryMin spatial:id="Zmin" spatial:value="-10"/>
+               <spatial:boundaryMax spatial:id="Zmax" spatial:value="10"/>
+            </spatial:coordinateComponent>
+         </spatial:listOfCoordinateComponents>
+         <spatial:listOfDomains>
+            <spatial:domain spatial:domainType="cell_domainType" spatial:id="cell_domain">
+               <spatial:listOfInteriorPoints>
+                  <spatial:interiorPoint spatial:coord1="0.049" spatial:coord2="15.729" spatial:coord3="0.049"/>
+               </spatial:listOfInteriorPoints>
+            </spatial:domain>
+            <spatial:domain spatial:domainType="EC_domainType" spatial:id="EC_domain">
+               <spatial:listOfInteriorPoints>
+                  <spatial:interiorPoint spatial:coord1="0.049" spatial:coord2="0.049" spatial:coord3="0.049"/>
+               </spatial:listOfInteriorPoints>
+            </spatial:domain>
+         </spatial:listOfDomains>
+         <spatial:listOfDomainTypes>
+            <spatial:domainType spatial:id="cell_domainType" spatial:spatialDimensions="3"/>
+            <spatial:domainType spatial:id="EC_domainType" spatial:spatialDimensions="3"/>
+         </spatial:listOfDomainTypes>
+         <spatial:listOfGeometryDefinitions>
+            <spatial:sampledFieldGeometry spatial:id="universal_sampledFieldGeometry" spatial:isActive="true" spatial:sampledField="universal_sampledField">
+               <spatial:listOfSampledVolumes>
+                  <spatial:sampledVolume spatial:domainType="cell_domainType" spatial:id="cell_sampledVolume" spatial:maxValue="2.5" spatial:minValue="1.5"/>
+                  <spatial:sampledVolume spatial:domainType="EC_domainType" spatial:id="EC_sampledVolume" spatial:maxValue="1.5" spatial:minValue="0.5"/>
+               </spatial:listOfSampledVolumes>
+            </spatial:sampledFieldGeometry>
+         </spatial:listOfGeometryDefinitions>
+         <spatial:listOfSampledFields>
+            <spatial:sampledField spatial:compression="deflated" spatial:dataType="uint8" spatial:id="universal_sampledField" spatial:interpolationType="nearestNeighbor" spatial:numSamples1="80" spatial:numSamples2="80" spatial:numSamples3="163" spatial:samplesLength="2047">120 156 237 194 1 9 0 0 0 2 160 43 93 232 255 185 126 132 104 83 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 120 51 161 187 166 104</spatial:sampledField>
+         </spatial:listOfSampledFields>
+      </spatial:geometry>
+      <listOfUnitDefinitions>
+         <unitDefinition id="molecules">
+            <listOfUnits>
+               <unit exponent="1" kind="item" multiplier="1" scale="0"/>
+            </listOfUnits>
+         </unitDefinition>
+         <unitDefinition id="um3">
+            <listOfUnits>
+               <unit exponent="3" kind="metre" multiplier="1" scale="-6"/>
+            </listOfUnits>
+         </unitDefinition>
+         <unitDefinition id="um2">
+            <listOfUnits>
+               <unit exponent="2" kind="metre" multiplier="1" scale="-6"/>
+            </listOfUnits>
+         </unitDefinition>
+         <unitDefinition id="um">
+            <listOfUnits>
+               <unit exponent="1" kind="metre" multiplier="1" scale="-6"/>
+            </listOfUnits>
+         </unitDefinition>
+         <unitDefinition id="s">
+            <listOfUnits>
+               <unit exponent="1" kind="second" multiplier="1" scale="0"/>
+            </listOfUnits>
+         </unitDefinition>
+      </listOfUnitDefinitions>
+      <listOfCompartments>
+         <compartment constant="true" id="EC" name="EC" size="50000" spatialDimensions="3" units="um3">
+            <spatial:compartmentMapping spatial:domainType="EC_domainType" spatial:id="ECEC" spatial:unitSize="1"/>
+            <annotation>
+               <cellorganizer/>
+            </annotation>
+         </compartment>
+         <compartment constant="true" id="cell" name="cell" size="50000" spatialDimensions="3" units="um3">
+            <spatial:compartmentMapping spatial:domainType="cell_domainType" spatial:id="cellcell" spatial:unitSize="1"/>
+            <annotation>
+               <cellorganizer/>
+            </annotation>
+         </compartment>
+      </listOfCompartments>
+   </model>
+</sbml>

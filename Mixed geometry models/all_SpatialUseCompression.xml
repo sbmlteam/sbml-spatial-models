@@ -1,0 +1,1143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" xmlns:spatial="http://www.sbml.org/sbml/level3/version1/spatial/version1" level="3" spatial:required="true" version="1">
+   <model areaUnits="um2" id="CellOrganizer2_7" lengthUnits="um" name="CellOrganizer2_7" substanceUnits="molecules" timeUnits="s" volumeUnits="um3">
+      <spatial:geometry spatial:coordinateSystem="cartesian">
+         <spatial:listOfAdjacentDomains>
+            <spatial:adjacentDomains spatial:domain1="EC1" spatial:domain2="cell1" spatial:id="EC1_cell1"/>
+            <spatial:adjacentDomains spatial:domain1="cell1" spatial:domain2="vesicle1" spatial:id="cell1_vesicle1"/>
+            <spatial:adjacentDomains spatial:domain1="cell1" spatial:domain2="vesicle2" spatial:id="cell1_vesicle2"/>
+            <spatial:adjacentDomains spatial:domain1="cell1" spatial:domain2="vesicle3" spatial:id="cell1_vesicle3"/>
+            <spatial:adjacentDomains spatial:domain1="cell1" spatial:domain2="vesicle4" spatial:id="cell1_vesicle4"/>
+            <spatial:adjacentDomains spatial:domain1="cell1" spatial:domain2="vesicle5" spatial:id="cell1_vesicle5"/>
+            <spatial:adjacentDomains spatial:domain1="cell1" spatial:domain2="nuc1" spatial:id="cell1_nuc1"/>
+         </spatial:listOfAdjacentDomains>
+         <spatial:listOfCoordinateComponents>
+            <spatial:coordinateComponent spatial:id="x" spatial:type="cartesianX" spatial:unit="um">
+               <spatial:boundaryMin spatial:id="Xmin" spatial:value="-10"/>
+               <spatial:boundaryMax spatial:id="Xmax" spatial:value="10"/>
+            </spatial:coordinateComponent>
+            <spatial:coordinateComponent spatial:id="y" spatial:type="cartesianY" spatial:unit="um">
+               <spatial:boundaryMin spatial:id="Ymin" spatial:value="-10"/>
+               <spatial:boundaryMax spatial:id="Ymax" spatial:value="10"/>
+            </spatial:coordinateComponent>
+            <spatial:coordinateComponent spatial:id="z" spatial:type="cartesianZ" spatial:unit="um">
+               <spatial:boundaryMin spatial:id="Zmin" spatial:value="-10"/>
+               <spatial:boundaryMax spatial:id="Zmax" spatial:value="10"/>
+            </spatial:coordinateComponent>
+         </spatial:listOfCoordinateComponents>
+         <spatial:listOfDomains>
+            <spatial:domain spatial:domainType="EC" spatial:id="EC0">
+               <spatial:listOfInteriorPoints>
+                  <spatial:interiorPoint spatial:coord1="18.4113" spatial:coord2="12.1209" spatial:coord3="0.61715"/>
+               </spatial:listOfInteriorPoints>
+            </spatial:domain>
+            <spatial:domain spatial:domainType="vesicle" spatial:id="vesicle0">
+               <spatial:listOfInteriorPoints>
+                  <spatial:interiorPoint spatial:coord1="4.41" spatial:coord2="14.0467" spatial:coord3="0.245"/>
+               </spatial:listOfInteriorPoints>
+            </spatial:domain>
+            <spatial:domain spatial:domainType="vesicle" spatial:id="vesicle1">
+               <spatial:listOfInteriorPoints>
+                  <spatial:interiorPoint spatial:coord1="27.1133" spatial:coord2="13.3933" spatial:coord3="0.392"/>
+               </spatial:listOfInteriorPoints>
+            </spatial:domain>
+            <spatial:domain spatial:domainType="vesicle" spatial:id="vesicle2">
+               <spatial:listOfInteriorPoints>
+                  <spatial:interiorPoint spatial:coord1="22.3767" spatial:coord2="15.19" spatial:coord3="0.343"/>
+               </spatial:listOfInteriorPoints>
+            </spatial:domain>
+            <spatial:domain spatial:domainType="vesicle" spatial:id="vesicle3">
+               <spatial:listOfInteriorPoints>
+                  <spatial:interiorPoint spatial:coord1="19.894" spatial:coord2="5.488" spatial:coord3="0.098"/>
+               </spatial:listOfInteriorPoints>
+            </spatial:domain>
+            <spatial:domain spatial:domainType="vesicle" spatial:id="vesicle4">
+               <spatial:listOfInteriorPoints>
+                  <spatial:interiorPoint spatial:coord1="5.5533" spatial:coord2="15.5167" spatial:coord3="0.245"/>
+               </spatial:listOfInteriorPoints>
+            </spatial:domain>
+            <spatial:domain spatial:domainType="nuc" spatial:id="nuc1"/>
+            <spatial:domain spatial:domainType="cell" spatial:id="cell1"/>
+         </spatial:listOfDomains>
+         <spatial:listOfDomainTypes>
+            <spatial:domainType spatial:id="EC" spatial:spatialDimensions="3"/>
+            <spatial:domainType spatial:id="vesicle" spatial:spatialDimensions="3"/>
+            <spatial:domainType spatial:id="nuc" spatial:spatialDimensions="3"/>
+            <spatial:domainType spatial:id="cell" spatial:spatialDimensions="3"/>
+         </spatial:listOfDomainTypes>
+         <spatial:listOfGeometryDefinitions>
+            <spatial:mixedGeometry spatial:id="id049101043048055" spatial:isActive="true">
+               <spatial:listOfGeometryDefinitions>
+                  <spatial:csGeometry spatial:id="csgid052101043048054" spatial:isActive="true">
+                     <spatial:listOfCSGObjects>
+                        <spatial:csgObject spatial:domainType="vesicle" spatial:id="vesicle1" spatial:ordinal="2">
+                           <spatial:csgTranslation spatial:id="translation" spatial:translateX="4.41" spatial:translateY="14.0467" spatial:translateZ="0.245">
+                              <spatial:csgRotation spatial:id="rotation" spatial:rotateAngleInRadians="1.3286" spatial:rotateX="0" spatial:rotateY="0" spatial:rotateZ="0">
+                                 <spatial:csgScale spatial:id="scale" spatial:scaleX="0.35562" spatial:scaleY="0.2821" spatial:scaleZ="0.19474">
+                                    <spatial:csgPrimitive spatial:id="sphere" spatial:primitiveType="sphere"/>
+                                 </spatial:csgScale>
+                              </spatial:csgRotation>
+                           </spatial:csgTranslation>
+                        </spatial:csgObject>
+                        <spatial:csgObject spatial:domainType="vesicle" spatial:id="vesicle2" spatial:ordinal="2">
+                           <spatial:csgTranslation spatial:id="translation" spatial:translateX="27.1133" spatial:translateY="13.3933" spatial:translateZ="0.392">
+                              <spatial:csgRotation spatial:id="rotation" spatial:rotateAngleInRadians="1.7086" spatial:rotateX="0" spatial:rotateY="0" spatial:rotateZ="0">
+                                 <spatial:csgScale spatial:id="scale" spatial:scaleX="0.28013" spatial:scaleY="0.21606" spatial:scaleZ="0.11218">
+                                    <spatial:csgPrimitive spatial:id="sphere" spatial:primitiveType="sphere"/>
+                                 </spatial:csgScale>
+                              </spatial:csgRotation>
+                           </spatial:csgTranslation>
+                        </spatial:csgObject>
+                        <spatial:csgObject spatial:domainType="vesicle" spatial:id="vesicle3" spatial:ordinal="2">
+                           <spatial:csgTranslation spatial:id="translation" spatial:translateX="22.3767" spatial:translateY="15.19" spatial:translateZ="0.343">
+                              <spatial:csgRotation spatial:id="rotation" spatial:rotateAngleInRadians="2.0814" spatial:rotateX="0" spatial:rotateY="0" spatial:rotateZ="0">
+                                 <spatial:csgScale spatial:id="scale" spatial:scaleX="0.13484" spatial:scaleY="0.13132" spatial:scaleZ="0.080563">
+                                    <spatial:csgPrimitive spatial:id="sphere" spatial:primitiveType="sphere"/>
+                                 </spatial:csgScale>
+                              </spatial:csgRotation>
+                           </spatial:csgTranslation>
+                        </spatial:csgObject>
+                        <spatial:csgObject spatial:domainType="vesicle" spatial:id="vesicle4" spatial:ordinal="2">
+                           <spatial:csgTranslation spatial:id="translation" spatial:translateX="19.894" spatial:translateY="5.488" spatial:translateZ="0.098">
+                              <spatial:csgRotation spatial:id="rotation" spatial:rotateAngleInRadians="1.7132" spatial:rotateX="0" spatial:rotateY="0" spatial:rotateZ="0">
+                                 <spatial:csgScale spatial:id="scale" spatial:scaleX="0.068289" spatial:scaleY="0.082303" spatial:scaleZ="0.04556">
+                                    <spatial:csgPrimitive spatial:id="sphere" spatial:primitiveType="sphere"/>
+                                 </spatial:csgScale>
+                              </spatial:csgRotation>
+                           </spatial:csgTranslation>
+                        </spatial:csgObject>
+                        <spatial:csgObject spatial:domainType="vesicle" spatial:id="vesicle5" spatial:ordinal="2">
+                           <spatial:csgTranslation spatial:id="translation" spatial:translateX="5.5533" spatial:translateY="15.5167" spatial:translateZ="0.245">
+                              <spatial:csgRotation spatial:id="rotation" spatial:rotateAngleInRadians="1.7707" spatial:rotateX="0" spatial:rotateY="0" spatial:rotateZ="0">
+                                 <spatial:csgScale spatial:id="scale" spatial:scaleX="0.14875" spatial:scaleY="0.14857" spatial:scaleZ="0.20003">
+                                    <spatial:csgPrimitive spatial:id="sphere" spatial:primitiveType="sphere"/>
+                                 </spatial:csgScale>
+                              </spatial:csgRotation>
+                           </spatial:csgTranslation>
+                        </spatial:csgObject>
+                     </spatial:listOfCSGObjects>
+                  </spatial:csGeometry>
+                  <spatial:parametricGeometry spatial:id="id049101043048054" spatial:isActive="true">
+                     <spatial:spatialPoints spatial:arrayDataLength="765" spatial:compression="uncompressed">
+572.06324 380.33408 -0.0282975
+572.06324 380.33408 0.1260525
+572.06324 380.4164 0.1311975
+572.06324 380.49872 -0.0282975
+572.06324 382.80368 0.3318525
+572.06324 382.886 0.1723575
+572.06324 382.96832 0.1775025
+572.06324 382.96832 0.3318525
+572.80412 378.77 0.3318525
+572.80412 381.2396 0.1775025
+572.80412 381.2396 0.3833025
+572.80412 386.1788 0.1775025
+572.80412 387.002 0.5376525
+572.88644 378.77 -0.0334425
+573.62732 378.77 0.3833025
+573.62732 378.77 0.5376525
+573.62732 384.5324 -0.0282975
+573.62732 385.3556 0.5891025
+573.62732 385.3556 0.7434525
+573.62732 387.002 0.5891025
+573.62732 387.8252 0.3833025
+573.62732 389.4716 0.3833025
+573.70964 387.8252 -0.0334425
+574.45052 382.0628 0.5891025
+574.45052 387.8252 0.7434525
+574.45052 388.6484 0.3318525
+574.45052 389.4716 0.5891025
+574.45052 390.2948 -0.0282975
+574.53284 376.21808 0.1260525
+574.53284 376.3004 -0.0334425
+575.27372 380.4164 0.7434525
+575.27372 386.1788 0.7949025
+575.27372 386.1788 0.9492525
+575.27372 391.118 0.7434525
+575.35604 376.21808 0.3318525
+575.35604 380.33408 0.5891025
+576.09692 382.886 0.7949025
+576.09692 382.886 0.9492525
+576.09692 384.5324 0.9492525
+576.09692 388.6484 0.9492525
+576.09692 391.9412 0.3318525
+576.09692 391.9412 0.7434525
+576.09692 392.7644 -0.0282975
+576.17924 389.4716 0.7485975
+576.17924 392.84672 0.5891025
+576.92012 375.4772 -0.0282975
+576.92012 375.4772 0.3318525
+576.92012 387.8252 1.0007025
+576.92012 387.8252 1.1550525
+577.00244 383.7092 1.1601975
+577.74332 375.4772 0.3833025
+577.74332 375.4772 0.5376525
+577.74332 378.77 0.5891025
+577.74332 391.118 0.9492525
+577.74332 391.9412 0.7949025
+577.74332 394.4108 -0.0282975
+577.74332 394.4108 0.5376525
+577.74332 397.7036 -0.0282975
+577.90796 375.4772 -0.0282975
+577.90796 375.4772 0.5376525
+578.56652 390.2948 1.1550525
+578.56652 396.0572 0.1775025
+578.56652 396.0572 0.3833025
+578.56652 397.7036 0.1775025
+578.56652 399.35 -0.0282975
+578.64884 377.04128 0.5891025
+578.64884 377.04128 0.7434525
+578.64884 390.37712 1.0007025
+578.64884 393.66992 0.5891025
+578.64884 393.66992 0.7434525
+579.38972 375.4772 -0.0282975
+579.38972 375.4772 0.3318525
+579.38972 399.35 0.3318525
+579.47204 392.84672 0.9492525
+579.47204 399.43232 0.1775025
+580.29524 378.77 0.9543975
+580.29524 380.33408 1.0007025
+580.29524 380.33408 1.1550525
+580.37756 375.4772 -0.0282975
+580.37756 375.4772 0.3318525
+581.03612 400.9964 0.1260525
+581.11844 392.02352 1.1550525
+581.11844 396.13952 0.5891025
+581.11844 396.13952 0.7434525
+581.11844 398.5268 0.5427975
+581.11844 399.43232 0.3833025
+581.11844 400.9964 -0.0334425
+581.20076 400.9964 0.1260525
+581.94164 376.21808 0.1775025
+581.94164 376.21808 0.5376525
+581.94164 378.68768 0.7949025
+581.94164 392.7644 0.9543975
+581.94164 399.43232 0.5376525
+582.76484 376.21808 -0.0282975
+582.76484 377.86448 0.9492525
+582.76484 379.51088 1.0007025
+582.76484 400.1732 -0.0334425
+583.58804 377.04128 0.7434525
+583.58804 378.68768 1.1550525
+583.58804 396.13952 0.5891025
+583.58804 399.43232 0.1260525
+583.58804 399.43232 0.3318525
+584.41124 377.86448 0.5891025
+584.41124 377.86448 0.9492525
+584.41124 395.31632 0.7434525
+584.41124 398.60912 0.3318525
+585.23444 377.04128 0.5376525
+585.23444 378.68768 0.7949025
+585.23444 397.78592 0.5376525
+585.23444 399.43232 0.1260525
+586.05764 377.86448 -0.0282975
+586.05764 377.86448 0.7434525
+586.05764 392.84672 1.1550525
+586.05764 393.66992 0.7949025
+586.05764 393.66992 0.9492525
+586.05764 398.60912 0.3318525
+586.88084 378.68768 0.5891025
+586.88084 378.68768 1.1550525
+586.88084 391.9412 1.1601975
+586.88084 395.31632 0.5891025
+586.88084 395.31632 0.7434525
+586.88084 397.78592 -0.0282975
+587.70404 377.86448 0.5376525
+587.70404 378.68768 0.9492525
+587.70404 396.13952 0.5376525
+587.70404 397.7036 -0.0334425
+587.70404 397.78592 0.1260525
+588.52724 377.86448 0.3318525
+588.52724 378.68768 0.1260525
+588.52724 378.68768 0.5376525
+588.52724 379.51088 0.7949025
+588.60956 395.234 0.3833025
+589.35044 377.86448 0.5376525
+589.35044 377.9468 -0.0334425
+589.35044 392.02352 1.0007025
+589.35044 392.84672 0.7434525
+589.43276 396.0572 0.1260525
+589.43276 396.0572 0.3318525
+590.17364 379.51088 1.1550525
+590.17364 393.66992 0.3833025
+590.17364 393.66992 0.5376525
+590.99684 377.86448 0.7434525
+590.99684 379.5932 0.9543975
+590.99684 392.02352 0.7949025
+590.99684 394.4108 -0.0334425
+591.82004 378.68768 0.5891025
+591.82004 392.02352 0.5891025
+591.82004 392.84672 0.3833025
+592.64324 377.86448 0.3318525
+592.64324 378.68768 0.7434525
+592.64324 392.02352 0.9492525
+592.64324 392.02352 1.1550525
+592.64324 394.49312 0.3318525
+593.46644 377.86448 0.5891025
+593.46644 377.86448 0.7434525
+593.46644 380.33408 0.7949025
+593.46644 380.33408 0.9492525
+593.46644 380.4164 1.1601975
+593.46644 394.49312 0.1260525
+594.28964 378.68768 0.5891025
+594.28964 391.20032 1.0007025
+594.28964 391.20032 1.1550525
+594.28964 392.02352 0.7434525
+594.28964 393.66992 -0.0282975
+595.11284 377.86448 0.1260525
+595.11284 381.15728 1.0007025
+595.11284 391.20032 0.5891025
+595.11284 391.20032 0.7434525
+595.11284 393.66992 0.3318525
+595.93604 377.04128 0.3318525
+595.93604 377.86448 0.5376525
+595.93604 380.33408 0.7949025
+595.93604 380.33408 0.9492525
+595.93604 392.02352 0.5376525
+595.93604 392.84672 0.3318525
+595.93604 393.5876 -0.0334425
+596.01836 389.4716 1.0007025
+596.75924 377.04128 0.3833025
+596.75924 377.86448 0.3318525
+596.75924 382.886 1.1601975
+596.75924 387.8252 1.1601975
+596.75924 392.7644 -0.0334425
+596.75924 392.84672 0.1775025
+596.84156 383.7092 1.0007025
+597.58244 378.68768 0.7434525
+597.58244 388.73072 0.7949025
+597.66476 386.1788 1.1550525
+598.40564 377.86448 -0.0282975
+598.40564 377.9468 0.5427975
+598.40564 391.118 0.7485975
+598.40564 391.20032 0.5891025
+598.40564 392.02352 0.3833025
+598.40564 392.84672 0.1260525
+598.48796 382.886 0.7949025
+598.48796 382.886 0.9492525
+598.48796 385.3556 0.9492525
+598.48796 387.002 0.7949025
+598.48796 388.6484 0.9492525
+599.22884 378.68768 -0.0282975
+599.22884 379.51088 0.5891025
+599.22884 379.5932 0.7485975
+599.22884 385.3556 0.7485975
+599.31116 386.1788 0.9492525
+600.05204 377.86448 0.3833025
+600.05204 378.68768 0.1775025
+600.05204 389.4716 0.7485975
+600.05204 389.55392 0.5891025
+600.05204 392.02352 0.5376525
+600.05204 392.84672 0.1260525
+600.87524 378.68768 0.5376525
+600.87524 391.20032 0.3833025
+600.87524 392.02352 -0.0282975
+602.52164 378.68768 0.5376525
+602.52164 379.51088 -0.0282975
+602.52164 391.20032 0.3833025
+602.52164 392.02352 0.3318525
+602.60396 382.886 0.5891025
+602.60396 382.886 0.7434525
+602.60396 388.6484 0.5891025
+602.60396 388.6484 0.7434525
+603.34484 378.68768 0.1775025
+603.34484 378.68768 0.3318525
+603.34484 382.0628 0.5427975
+603.34484 390.37712 0.5376525
+603.34484 391.20032 -0.0282975
+604.16804 379.51088 0.5376525
+604.99124 390.37712 0.5376525
+604.99124 391.20032 0.3318525
+605.81444 380.33408 -0.0282975
+605.81444 380.33408 0.1775025
+605.81444 381.15728 0.3833025
+605.81444 389.4716 0.5427975
+605.81444 391.118 -0.0334425
+605.81444 391.20032 0.1260525
+606.63764 380.33408 0.3318525
+606.63764 381.15728 0.5376525
+606.63764 390.37712 0.3318525
+606.71996 383.7092 0.5376525
+606.71996 387.8252 0.3833025
+607.46084 381.15728 0.1775025
+607.46084 383.7092 0.3369975
+607.54316 381.2396 -0.0282975
+607.54316 382.0628 0.5376525
+608.36636 389.4716 -0.0282975
+609.10724 382.80368 -0.0282975
+609.10724 382.80368 0.1775025
+609.10724 389.4716 0.3369975
+609.18956 384.5324 -0.0282975
+609.18956 387.002 0.3318525
+609.18956 387.8252 -0.0282975
+609.18956 389.4716 0.1775025
+609.93044 383.79152 0.1260525
+610.01276 383.7092 -0.0282975
+610.01276 383.7092 0.3318525
+610.01276 386.1788 0.1775025
+</spatial:spatialPoints>
+                     <spatial:listOfParametricObjects>
+                        <spatial:parametricObject spatial:compression="uncompressed" spatial:domainType="nuc" spatial:id="nuc1_mesh" spatial:pointIndexLength="597" spatial:polygonType="triangle">
+1 14 19
+4 1 25
+4 25 9
+1 19 25
+25 19 34
+19 54 34
+19 46 54
+46 81 54
+62 73 66
+73 62 84
+62 96 84
+54 81 62
+81 95 62
+62 95 96
+3 4 8
+4 9 8
+14 1 13
+9 25 12
+19 14 16
+46 19 43
+80 46 43
+54 62 56
+81 46 80
+81 80 95
+96 92 84
+62 44 56
+13 1 2
+8 9 12
+16 14 13
+19 16 27
+43 19 27
+34 35 25
+84 92 73
+95 80 94
+95 94 96
+96 94 102
+96 102 92
+2 3 8
+25 35 31
+45 44 41
+45 56 44
+80 43 58
+43 27 58
+62 63 44
+62 66 63
+73 74 66
+80 58 77
+92 74 73
+92 85 74
+80 77 94
+94 101 102
+2 8 6
+16 13 6
+13 2 6
+35 38 39
+41 44 42
+102 93 92
+12 25 31
+35 39 31
+49 27 16
+58 27 49
+70 58 49
+66 74 63
+77 58 70
+77 70 90
+94 77 90
+92 93 85
+94 90 105
+94 105 101
+102 107 93
+101 105 102
+102 105 107
+8 12 11
+16 6 15
+12 31 20
+49 16 32
+48 49 32
+44 39 42
+63 74 86
+74 85 86
+85 93 86
+93 107 98
+20 31 30
+39 47 31
+39 44 47
+48 55 49
+44 63 47
+86 76 63
+90 100 105
+105 100 106
+107 108 103
+107 103 98
+15 6 17
+17 6 5
+32 16 33
+70 49 55
+90 70 78
+90 78 100
+93 98 86
+5 6 8
+11 12 20
+16 15 28
+28 15 17
+33 16 28
+78 70 67
+5 8 11
+11 20 30
+31 47 30
+33 28 55
+76 69 63
+98 87 86
+100 78 106
+108 106 103
+17 5 10
+5 11 7
+70 55 28
+63 53 47
+63 69 53
+67 70 64
+64 70 28
+76 75 69
+78 79 106
+86 87 76
+76 87 75
+98 104 97
+103 104 98
+11 30 24
+28 17 18
+5 7 10
+7 11 24
+18 17 10
+64 28 18
+30 40 24
+47 51 30
+47 53 51
+78 67 64
+79 78 64
+106 79 99
+98 97 87
+106 99 103
+103 99 104
+10 7 21
+21 7 24
+21 24 22
+18 10 36
+10 21 36
+36 21 26
+22 24 40
+18 36 64
+64 36 57
+51 75 60
+51 53 75
+75 53 69
+75 82 60
+79 64 57
+57 65 79
+79 65 91
+65 71 91
+91 71 88
+75 97 82
+79 91 99
+97 75 87
+91 88 97
+97 88 82
+99 91 104
+91 97 104
+22 40 37
+51 40 30
+65 57 50
+51 60 61
+71 65 59
+82 89 60
+88 71 72
+88 72 83
+88 89 82
+26 21 29
+22 37 23
+51 52 40
+60 68 61
+71 59 72
+60 89 68
+29 21 23
+21 22 23
+36 26 29
+50 36 29
+37 40 52
+57 36 50
+51 61 52
+59 65 50
+88 83 89
+29 23 59
+23 37 59
+29 59 50
+37 52 59
+59 52 61
+59 61 68
+89 59 68
+72 59 89
+72 89 83
+</spatial:parametricObject>
+                        <spatial:parametricObject spatial:compression="uncompressed" spatial:domainType="cell" spatial:id="cell1_mesh" spatial:pointIndexLength="1485" spatial:polygonType="triangle">
+1 14 4
+14 17 4
+14 28 17
+17 28 23
+30 28 14
+30 46 28
+28 233 43
+46 59 28
+59 71 28
+28 71 79
+43 233 58
+43 58 56
+65 58 97
+65 97 87
+79 94 28
+94 111 28
+97 58 122
+111 134 28
+58 233 126
+58 126 122
+28 134 233
+126 182 145
+134 199 233
+145 182 164
+126 233 182
+182 176 164
+182 233 212
+134 188 199
+199 214 233
+214 229 233
+212 233 225
+229 242 233
+233 250 244
+242 245 233
+233 245 248
+233 248 250
+245 253 248
+9 14 2
+14 1 2
+4 17 10
+10 17 7
+21 23 26
+30 14 29
+23 28 26
+46 30 29
+28 43 41
+59 60 71
+58 65 64
+65 87 81
+97 88 87
+97 110 101
+111 94 107
+97 122 110
+134 111 128
+128 111 123
+126 127 122
+134 128 129
+126 145 137
+188 134 149
+164 159 145
+179 188 149
+182 183 176
+212 183 182
+212 193 183
+225 216 212
+229 214 221
+242 229 240
+244 250 251
+245 246 253
+17 23 12
+23 21 12
+97 101 88
+159 153 145
+179 149 165
+212 209 193
+242 240 245
+4 10 3
+7 17 12
+62 58 64
+64 65 75
+65 81 75
+94 79 89
+107 94 89
+149 134 129
+176 183 164
+199 188 205
+233 234 225
+229 221 230
+229 230 240
+244 234 233
+245 240 246
+250 255 251
+248 252 255
+248 255 250
+248 253 252
+2 3 10
+10 7 6
+43 56 57
+56 58 62
+81 88 75
+75 88 101
+127 116 122
+126 137 127
+183 169 164
+164 169 159
+212 193 209
+212 216 193
+234 228 225
+244 237 234
+246 254 253
+9 2 10
+10 6 11
+11 6 5
+29 14 9
+35 29 9
+46 29 35
+56 62 57
+71 60 72
+64 75 73
+89 79 80
+101 102 75
+110 106 101
+101 106 102
+127 137 116
+129 128 149
+145 140 137
+145 153 140
+159 169 153
+183 175 169
+214 199 205
+221 214 205
+221 222 230
+240 230 235
+240 235 246
+251 247 244
+255 249 251
+9 10 11
+7 12 8
+46 35 47
+165 149 170
+225 215 216
+228 215 225
+251 249 247
+253 254 252
+252 254 255
+26 28 22
+28 41 22
+62 64 63
+64 73 63
+75 86 73
+75 102 86
+110 116 106
+122 116 110
+137 132 116
+137 138 132
+137 140 138
+165 170 179
+193 175 183
+193 192 175
+205 188 204
+216 211 193
+221 205 222
+230 222 231
+235 230 231
+234 237 228
+244 247 237
+246 235 254
+255 254 249
+35 9 15
+15 9 11
+11 5 8
+21 26 22
+47 35 15
+63 73 86
+89 80 90
+116 132 106
+133 149 128
+138 140 132
+153 148 140
+153 175 148
+169 175 153
+188 179 204
+204 179 178
+193 211 192
+216 215 211
+237 239 228
+241 239 237
+254 235 241
+249 241 247
+241 237 247
+241 249 254
+8 12 11
+12 21 11
+22 41 27
+51 47 52
+80 72 90
+63 86 85
+102 93 86
+107 89 90
+148 175 147
+170 171 179
+178 179 171
+192 174 175
+211 208 192
+192 208 174
+205 204 213
+213 204 210
+222 205 213
+222 213 226
+228 224 215
+222 226 231
+228 227 224
+228 232 227
+235 231 236
+239 232 228
+235 236 243
+241 238 239
+239 238 232
+235 243 241
+11 21 13
+41 43 57
+90 72 60
+106 109 102
+132 109 106
+132 125 109
+128 123 130
+133 128 130
+170 149 171
+241 243 238
+16 11 13
+13 21 20
+15 11 16
+21 22 20
+20 22 27
+52 15 16
+27 41 45
+41 57 45
+47 15 52
+62 63 57
+57 63 85
+85 86 93
+102 109 93
+111 107 117
+123 111 117
+140 125 132
+140 141 125
+148 141 140
+148 147 141
+149 133 146
+154 149 146
+171 149 154
+175 174 147
+189 178 171
+204 178 189
+204 189 210
+215 224 211
+211 224 208
+231 226 236
+18 13 20
+16 13 24
+52 16 24
+24 13 18
+52 24 53
+53 24 36
+57 69 45
+52 53 60
+60 53 66
+90 60 66
+57 83 69
+83 57 85
+85 100 83
+107 90 98
+100 85 93
+100 93 109
+100 125 120
+125 100 109
+117 107 103
+130 123 117
+125 141 120
+171 154 160
+174 167 147
+171 160 189
+189 160 200
+167 174 191
+208 191 174
+189 200 210
+208 207 191
+208 224 207
+213 210 223
+210 200 223
+223 200 217
+207 224 219
+213 223 226
+223 217 219
+223 219 224
+226 223 236
+236 223 232
+223 224 232
+232 224 227
+238 243 236
+238 236 232
+20 27 25
+27 45 34
+34 45 42
+45 69 42
+98 90 66
+107 98 103
+120 105 100
+117 103 112
+130 117 112
+120 136 121
+141 136 120
+133 130 142
+147 136 141
+133 142 146
+146 142 150
+155 154 150
+154 146 150
+154 155 160
+167 163 147
+200 160 185
+200 218 217
+219 220 207
+219 217 220
+66 53 67
+69 83 70
+70 83 84
+100 105 83
+167 168 163
+191 207 206
+191 206 190
+18 20 19
+19 20 25
+24 18 31
+31 18 19
+25 27 34
+36 24 31
+67 53 31
+53 36 31
+42 69 70
+98 66 67
+83 105 84
+103 98 108
+112 103 108
+120 121 105
+142 130 112
+147 144 136
+185 160 155
+191 190 167
+167 190 168
+201 200 185
+200 201 218
+207 220 206
+217 218 220
+67 31 37
+31 19 37
+37 19 32
+19 25 32
+25 34 32
+32 34 44
+44 34 42
+44 42 55
+55 42 70
+67 37 91
+70 84 105
+67 91 98
+112 108 124
+121 114 70
+70 105 121
+142 112 131
+131 112 124
+121 136 114
+150 142 131
+150 131 156
+147 151 144
+150 156 155
+163 151 147
+155 156 185
+185 156 172
+190 186 168
+185 172 201
+172 194 201
+201 194 202
+202 194 197
+202 197 206
+206 197 186
+206 186 190
+201 202 220
+202 206 220
+201 220 218
+37 32 38
+48 32 40
+32 44 40
+40 44 54
+44 55 54
+55 70 74
+70 114 74
+98 91 95
+108 98 95
+136 135 114
+144 135 136
+156 131 157
+163 168 161
+163 161 151
+194 196 197
+197 196 203
+186 197 198
+39 32 33
+32 48 33
+38 32 39
+91 37 38
+114 115 74
+172 156 157
+173 172 157
+54 55 74
+91 38 76
+95 91 76
+108 95 104
+118 108 104
+124 108 118
+114 135 115
+157 131 143
+186 177 168
+168 177 161
+172 173 194
+194 173 195
+186 198 177
+194 195 196
+197 203 198
+39 33 48
+76 38 39
+48 40 68
+40 54 68
+76 39 95
+95 39 77
+68 54 74
+68 74 92
+95 77 96
+115 92 74
+104 95 96
+118 104 99
+124 118 131
+157 166 173
+173 166 184
+173 184 195
+203 196 177
+203 177 198
+195 184 196
+78 39 50
+39 48 50
+50 48 49
+48 68 49
+77 39 78
+49 68 61
+104 96 99
+115 113 92
+92 113 82
+115 119 113
+115 135 119
+143 131 139
+158 143 139
+144 152 135
+157 143 158
+151 152 144
+157 158 166
+166 180 184
+196 187 177
+196 184 187
+68 92 82
+135 152 119
+161 162 151
+177 162 161
+177 187 181
+68 82 61
+96 77 78
+99 96 78
+139 131 118
+151 162 152
+166 158 180
+177 181 162
+184 180 187
+50 49 78
+49 61 78
+61 82 78
+78 82 113
+99 78 118
+78 113 119
+118 78 139
+139 78 119
+139 119 158
+158 119 152
+158 152 162
+180 158 181
+181 158 162
+180 181 187
+</spatial:parametricObject>
+                     </spatial:listOfParametricObjects>
+                  </spatial:parametricGeometry>
+               </spatial:listOfGeometryDefinitions>
+            </spatial:mixedGeometry>
+         </spatial:listOfGeometryDefinitions>
+      </spatial:geometry>
+      <listOfUnitDefinitions>
+         <unitDefinition id="molecules">
+            <listOfUnits>
+               <unit exponent="1" kind="item" multiplier="1" scale="0"/>
+            </listOfUnits>
+         </unitDefinition>
+         <unitDefinition id="um3">
+            <listOfUnits>
+               <unit exponent="3" kind="metre" multiplier="1" scale="-6"/>
+            </listOfUnits>
+         </unitDefinition>
+         <unitDefinition id="um2">
+            <listOfUnits>
+               <unit exponent="2" kind="metre" multiplier="1" scale="-6"/>
+            </listOfUnits>
+         </unitDefinition>
+         <unitDefinition id="um">
+            <listOfUnits>
+               <unit exponent="1" kind="metre" multiplier="1" scale="-6"/>
+            </listOfUnits>
+         </unitDefinition>
+         <unitDefinition id="s">
+            <listOfUnits>
+               <unit exponent="1" kind="second" multiplier="1" scale="0"/>
+            </listOfUnits>
+         </unitDefinition>
+      </listOfUnitDefinitions>
+      <listOfCompartments>
+         <compartment constant="true" id="EC" name="EC" size="50000" spatialDimensions="3" units="um3">
+            <spatial:compartmentMapping spatial:domainType="EC_domainType" spatial:id="ECEC" spatial:unitSize="1"/>
+            <annotation>
+               <cellorganizer/>
+            </annotation>
+         </compartment>
+         <compartment constant="true" id="cell" name="cell" size="50000" spatialDimensions="3" units="um3">
+            <spatial:compartmentMapping spatial:domainType="cell_domainType" spatial:id="cellcell" spatial:unitSize="1"/>
+            <annotation>
+               <cellorganizer/>
+            </annotation>
+         </compartment>
+         <compartment constant="true" id="nuc" name="nuc" size="50000" spatialDimensions="3" units="um3">
+            <spatial:compartmentMapping spatial:domainType="nuc_domainType" spatial:id="nucnuc" spatial:unitSize="1"/>
+            <annotation>
+               <cellorganizer/>
+            </annotation>
+         </compartment>
+         <compartment constant="true" id="vesicle" name="vesicle" size="50000" spatialDimensions="3" units="um3">
+            <spatial:compartmentMapping spatial:domainType="vesicle_domainType" spatial:id="vesiclevesicle" spatial:unitSize="1"/>
+            <annotation>
+               <cellorganizer/>
+            </annotation>
+         </compartment>
+      </listOfCompartments>
+      <listOfParameters>
+         <parameter constant="true" id="vol_nuc" value="129.1927"/>
+         <parameter constant="true" id="sa_nuc" value="373.2301"/>
+         <parameter constant="true" id="vol_cell" value="558.1132"/>
+         <parameter constant="true" id="sa_cell" value="1408.3386"/>
+      </listOfParameters>
+   </model>
+</sbml>

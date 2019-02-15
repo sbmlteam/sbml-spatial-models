@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" xmlns:spatial="http://www.sbml.org/sbml/level3/version1/spatial/version1" level="3" spatial:required="true" version="1">
+   <model areaUnits="um2" id="CellOrganizer2_7" lengthUnits="um" name="CellOrganizer2_7" substanceUnits="molecules" timeUnits="s" volumeUnits="um3">
+      <spatial:geometry spatial:coordinateSystem="cartesian">
+         <spatial:listOfAdjacentDomains>
+            <spatial:adjacentDomains spatial:domain1="cell1" spatial:domain2="nuc1" spatial:id="cell1_nuc1"/>
+         </spatial:listOfAdjacentDomains>
+         <spatial:listOfCoordinateComponents>
+            <spatial:coordinateComponent spatial:id="x" spatial:type="cartesianX" spatial:unit="um">
+               <spatial:boundaryMin spatial:id="Xmin" spatial:value="0"/>
+               <spatial:boundaryMax spatial:id="Xmax" spatial:value="5.929"/>
+            </spatial:coordinateComponent>
+            <spatial:coordinateComponent spatial:id="y" spatial:type="cartesianY" spatial:unit="um">
+               <spatial:boundaryMin spatial:id="Ymin" spatial:value="-10"/>
+               <spatial:boundaryMax spatial:id="Ymax" spatial:value="10"/>
+            </spatial:coordinateComponent>
+            <spatial:coordinateComponent spatial:id="z" spatial:type="cartesianZ" spatial:unit="um">
+               <spatial:boundaryMin spatial:id="Zmin" spatial:value="-10"/>
+               <spatial:boundaryMax spatial:id="Zmax" spatial:value="10"/>
+            </spatial:coordinateComponent>
+         </spatial:listOfCoordinateComponents>
+         <spatial:listOfDomains>
+            <spatial:domain spatial:domainType="nuc_domainType" spatial:id="nuc_domain">
+               <spatial:listOfInteriorPoints>
+                  <spatial:interiorPoint spatial:coord1="1.029" spatial:coord2="3.087" spatial:coord3="0.049"/>
+               </spatial:listOfInteriorPoints>
+            </spatial:domain>
+            <spatial:domain spatial:domainType="cell_domainType" spatial:id="cell_domain">
+               <spatial:listOfInteriorPoints>
+                  <spatial:interiorPoint spatial:coord1="0.49" spatial:coord2="2.254" spatial:coord3="0.049"/>
+               </spatial:listOfInteriorPoints>
+            </spatial:domain>
+            <spatial:domain spatial:domainType="EC_domainType" spatial:id="EC_domain">
+               <spatial:listOfInteriorPoints>
+                  <spatial:interiorPoint spatial:coord1="0.049" spatial:coord2="0.049" spatial:coord3="0.049"/>
+               </spatial:listOfInteriorPoints>
+            </spatial:domain>
+         </spatial:listOfDomains>
+         <spatial:listOfDomainTypes>
+            <spatial:domainType spatial:id="nuc_domainType" spatial:spatialDimensions="3"/>
+            <spatial:domainType spatial:id="cell_domainType" spatial:spatialDimensions="3"/>
+            <spatial:domainType spatial:id="EC_domainType" spatial:spatialDimensions="3"/>
+         </spatial:listOfDomainTypes>
+         <spatial:listOfGeometryDefinitions>
+            <spatial:sampledFieldGeometry spatial:id="universal_sampledFieldGeometry" spatial:isActive="true" spatial:sampledField="universal_sampledField">
+               <spatial:listOfSampledVolumes>
+                  <spatial:sampledVolume spatial:domainType="nuc_domainType" spatial:id="nuc_sampledVolume" spatial:maxValue="3.5" spatial:minValue="2.5"/>
+                  <spatial:sampledVolume spatial:domainType="cell_domainType" spatial:id="cell_sampledVolume" spatial:maxValue="2.5" spatial:minValue="1.5"/>
+                  <spatial:sampledVolume spatial:domainType="EC_domainType" spatial:id="EC_sampledVolume" spatial:maxValue="1.5" spatial:minValue="0.5"/>
+               </spatial:listOfSampledVolumes>
+            </spatial:sampledFieldGeometry>
+         </spatial:listOfGeometryDefinitions>
+         <spatial:listOfSampledFields>
+            <spatial:sampledField spatial:compression="deflated" spatial:dataType="uint8" spatial:id="universal_sampledField" spatial:interpolationType="nearestNeighbor" spatial:numSamples1="8" spatial:numSamples2="6" spatial:numSamples3="36" spatial:samplesLength="115">120 156 237 213 81 10 128 32 16 4 208 171 116 133 29 239 127 183 66 220 210 92 77 13 54 136 97 64 24 149 247 35 184 178 201 17 196 85 131 152 188 133 108 39 156 65 58 191 58 154 6 253 63 251 50 236 99 194 183 117 250 79 190 84 55 49 232 183 69 250 115 254 253 181 233 123 250 98 248 218 233 251 250 245 127 167 94 217 87 117 250 107 62 138 83 250 126 62 12 191 63 207 233 191 241 123 243 230 99 127 7 130 193 38 71</spatial:sampledField>
+         </spatial:listOfSampledFields>
+      </spatial:geometry>
+      <listOfUnitDefinitions>
+         <unitDefinition id="molecules">
+            <listOfUnits>
+               <unit exponent="1" kind="item" multiplier="1" scale="0"/>
+            </listOfUnits>
+         </unitDefinition>
+         <unitDefinition id="um3">
+            <listOfUnits>
+               <unit exponent="3" kind="metre" multiplier="1" scale="-6"/>
+            </listOfUnits>
+         </unitDefinition>
+         <unitDefinition id="um2">
+            <listOfUnits>
+               <unit exponent="2" kind="metre" multiplier="1" scale="-6"/>
+            </listOfUnits>
+         </unitDefinition>
+         <unitDefinition id="um">
+            <listOfUnits>
+               <unit exponent="1" kind="metre" multiplier="1" scale="-6"/>
+            </listOfUnits>
+         </unitDefinition>
+         <unitDefinition id="s">
+            <listOfUnits>
+               <unit exponent="1" kind="second" multiplier="1" scale="0"/>
+            </listOfUnits>
+         </unitDefinition>
+      </listOfUnitDefinitions>
+      <listOfCompartments>
+         <compartment constant="true" id="EC" name="EC" size="50000" spatialDimensions="3" units="um3">
+            <spatial:compartmentMapping spatial:domainType="EC_domainType" spatial:id="ECEC" spatial:unitSize="1"/>
+            <annotation>
+               <cellorganizer/>
+            </annotation>
+         </compartment>
+         <compartment constant="true" id="cell" name="cell" size="50000" spatialDimensions="3" units="um3">
+            <spatial:compartmentMapping spatial:domainType="cell_domainType" spatial:id="cellcell" spatial:unitSize="1"/>
+            <annotation>
+               <cellorganizer/>
+            </annotation>
+         </compartment>
+         <compartment constant="true" id="nuc" name="nuc" size="50000" spatialDimensions="3" units="um3">
+            <spatial:compartmentMapping spatial:domainType="nuc_domainType" spatial:id="nucnuc" spatial:unitSize="1"/>
+            <annotation>
+               <cellorganizer/>
+            </annotation>
+         </compartment>
+      </listOfCompartments>
+   </model>
+</sbml>
