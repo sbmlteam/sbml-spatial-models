@@ -1,0 +1,25 @@
+{
+  "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
+  "@type": "SoftwareSourceCode",
+  "description": "Test models for the SBML Level 3 Spatial package",
+  "name": "SBML Level 3 Spatial Models",
+  "codeRepository": "https://github.com/sbmlteam/sbml-spatial-models",
+  "issueTracker": "https://github.com/sbmlteam/sbml-spatial-models/issues",
+  "license": "https://github.com/sbmlteam/sbml-spatial-models/blob/master/LICENSE",
+  "version": "1.0.0",
+  "author": [
+    {
+      "@type": "Person",
+      "givenName": "Lucian",
+      "familyName": "Smith",
+      "affiliation": "University of Washington",
+      "email": "lpsmith@u.washington.edu",
+      "@id": "https://orcid.org/0000-0001-7002-6386"
+    }],
+  "developmentStatus": "active",
+  "downloadUrl": "https://github.com/sbmlteam/sbml-spatial-models/archive/1.0.0.zip",
+  "keywords": [
+    "software",
+  ],
+  "maintainer": "https://orcid.org/0000-0001-7002-6386",
+}
