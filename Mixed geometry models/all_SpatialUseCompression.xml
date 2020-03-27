@@ -3,12 +3,12 @@
    <model areaUnits="um2" id="CellOrganizer2_7" lengthUnits="um" name="CellOrganizer2_7" substanceUnits="molecules" timeUnits="s" volumeUnits="um3">
       <spatial:geometry spatial:coordinateSystem="cartesian">
          <spatial:listOfAdjacentDomains>
-            <spatial:adjacentDomains spatial:domain1="EC1" spatial:domain2="cell1" spatial:id="EC1_cell1"/>
+            <spatial:adjacentDomains spatial:domain1="EC0" spatial:domain2="cell1" spatial:id="EC1_cell1"/>
             <spatial:adjacentDomains spatial:domain1="cell1" spatial:domain2="vesicle1" spatial:id="cell1_vesicle1"/>
             <spatial:adjacentDomains spatial:domain1="cell1" spatial:domain2="vesicle2" spatial:id="cell1_vesicle2"/>
             <spatial:adjacentDomains spatial:domain1="cell1" spatial:domain2="vesicle3" spatial:id="cell1_vesicle3"/>
             <spatial:adjacentDomains spatial:domain1="cell1" spatial:domain2="vesicle4" spatial:id="cell1_vesicle4"/>
-            <spatial:adjacentDomains spatial:domain1="cell1" spatial:domain2="vesicle5" spatial:id="cell1_vesicle5"/>
+            <spatial:adjacentDomains spatial:domain1="cell1" spatial:domain2="vesicle0" spatial:id="cell1_vesicle0"/>
             <spatial:adjacentDomains spatial:domain1="cell1" spatial:domain2="nuc1" spatial:id="cell1_nuc1"/>
          </spatial:listOfAdjacentDomains>
          <spatial:listOfCoordinateComponents>
@@ -68,9 +68,9 @@
          <spatial:listOfGeometryDefinitions>
             <spatial:mixedGeometry spatial:id="id049101043048055" spatial:isActive="true">
                <spatial:listOfGeometryDefinitions>
-                  <spatial:csGeometry spatial:id="csgid052101043048054" spatial:isActive="true">
+                  <spatial:csGeometry spatial:id="csgid052101043048054" spatial:isActive="false">
                      <spatial:listOfCSGObjects>
-                        <spatial:csgObject spatial:domainType="vesicle" spatial:id="vesicle1" spatial:ordinal="2">
+                        <spatial:csgObject spatial:domainType="vesicle" spatial:id="vesicle1" spatial:ordinal="1">
                            <spatial:csgTranslation spatial:id="translation" spatial:translateX="4.41" spatial:translateY="14.0467" spatial:translateZ="0.245">
                               <spatial:csgRotation spatial:id="rotation" spatial:rotateAngleInRadians="1.3286" spatial:rotateX="0" spatial:rotateY="0" spatial:rotateZ="0">
                                  <spatial:csgScale spatial:id="scale" spatial:scaleX="0.35562" spatial:scaleY="0.2821" spatial:scaleZ="0.19474">
@@ -88,7 +88,7 @@
                               </spatial:csgRotation>
                            </spatial:csgTranslation>
                         </spatial:csgObject>
-                        <spatial:csgObject spatial:domainType="vesicle" spatial:id="vesicle3" spatial:ordinal="2">
+                        <spatial:csgObject spatial:domainType="vesicle" spatial:id="vesicle3" spatial:ordinal="3">
                            <spatial:csgTranslation spatial:id="translation" spatial:translateX="22.3767" spatial:translateY="15.19" spatial:translateZ="0.343">
                               <spatial:csgRotation spatial:id="rotation" spatial:rotateAngleInRadians="2.0814" spatial:rotateX="0" spatial:rotateY="0" spatial:rotateZ="0">
                                  <spatial:csgScale spatial:id="scale" spatial:scaleX="0.13484" spatial:scaleY="0.13132" spatial:scaleZ="0.080563">
@@ -97,7 +97,7 @@
                               </spatial:csgRotation>
                            </spatial:csgTranslation>
                         </spatial:csgObject>
-                        <spatial:csgObject spatial:domainType="vesicle" spatial:id="vesicle4" spatial:ordinal="2">
+                        <spatial:csgObject spatial:domainType="vesicle" spatial:id="vesicle4" spatial:ordinal="4">
                            <spatial:csgTranslation spatial:id="translation" spatial:translateX="19.894" spatial:translateY="5.488" spatial:translateZ="0.098">
                               <spatial:csgRotation spatial:id="rotation" spatial:rotateAngleInRadians="1.7132" spatial:rotateX="0" spatial:rotateY="0" spatial:rotateZ="0">
                                  <spatial:csgScale spatial:id="scale" spatial:scaleX="0.068289" spatial:scaleY="0.082303" spatial:scaleZ="0.04556">
@@ -106,7 +106,7 @@
                               </spatial:csgRotation>
                            </spatial:csgTranslation>
                         </spatial:csgObject>
-                        <spatial:csgObject spatial:domainType="vesicle" spatial:id="vesicle5" spatial:ordinal="2">
+                        <spatial:csgObject spatial:domainType="vesicle" spatial:id="vesicle5" spatial:ordinal="5">
                            <spatial:csgTranslation spatial:id="translation" spatial:translateX="5.5533" spatial:translateY="15.5167" spatial:translateZ="0.245">
                               <spatial:csgRotation spatial:id="rotation" spatial:rotateAngleInRadians="1.7707" spatial:rotateX="0" spatial:rotateY="0" spatial:rotateZ="0">
                                  <spatial:csgScale spatial:id="scale" spatial:scaleX="0.14875" spatial:scaleY="0.14857" spatial:scaleZ="0.20003">
@@ -117,7 +117,7 @@
                         </spatial:csgObject>
                      </spatial:listOfCSGObjects>
                   </spatial:csGeometry>
-                  <spatial:parametricGeometry spatial:id="id049101043048054" spatial:isActive="true">
+                  <spatial:parametricGeometry spatial:id="id049101043048054" spatial:isActive="false">
                      <spatial:spatialPoints spatial:arrayDataLength="765" spatial:compression="uncompressed">
 572.06324 380.33408 -0.0282975
 572.06324 380.33408 0.1260525
@@ -577,7 +577,7 @@
 72 59 89
 72 89 83
 </spatial:parametricObject>
-                        <spatial:parametricObject spatial:compression="uncompressed" spatial:domainType="cell" spatial:id="cell1_mesh" spatial:pointIndexLength="1485" spatial:polygonType="triangle">
+                        <spatial:parametricObject spatial:compression="uncompressed" spatial:domainType="cell" spatial:id="cell1_mesh" spatial:pointIndexLength="1479" spatial:polygonType="triangle">
 1 14 4
 14 17 4
 14 28 17
@@ -652,7 +652,6 @@
 97 101 88
 159 153 145
 179 149 165
-212 209 193
 242 240 245
 4 10 3
 7 17 12
@@ -669,9 +668,9 @@
 229 230 240
 244 234 233
 245 240 246
-250 255 251
-248 252 255
-248 255 250
+250 0 251
+248 252 0
+248 0 250
 248 253 252
 2 3 10
 10 7 6
@@ -683,7 +682,6 @@
 126 137 127
 183 169 164
 164 169 159
-212 193 209
 212 216 193
 234 228 225
 244 237 234
@@ -713,7 +711,7 @@
 240 230 235
 240 235 246
 251 247 244
-255 249 251
+0 249 251
 9 10 11
 7 12 8
 46 35 47
@@ -722,7 +720,7 @@
 228 215 225
 251 249 247
 253 254 252
-252 254 255
+252 254 0
 26 28 22
 28 41 22
 62 64 63
@@ -745,7 +743,7 @@
 234 237 228
 244 247 237
 246 235 254
-255 254 249
+0 254 249
 35 9 15
 15 9 11
 11 5 8
@@ -1109,25 +1107,25 @@
       </listOfUnitDefinitions>
       <listOfCompartments>
          <compartment constant="true" id="EC" name="EC" size="50000" spatialDimensions="3" units="um3">
-            <spatial:compartmentMapping spatial:domainType="EC_domainType" spatial:id="ECEC" spatial:unitSize="1"/>
+            <spatial:compartmentMapping spatial:domainType="EC" spatial:id="ECEC" spatial:unitSize="1"/>
             <annotation>
                <cellorganizer/>
             </annotation>
          </compartment>
          <compartment constant="true" id="cell" name="cell" size="50000" spatialDimensions="3" units="um3">
-            <spatial:compartmentMapping spatial:domainType="cell_domainType" spatial:id="cellcell" spatial:unitSize="1"/>
+            <spatial:compartmentMapping spatial:domainType="cell" spatial:id="cellcell" spatial:unitSize="1"/>
             <annotation>
                <cellorganizer/>
             </annotation>
          </compartment>
          <compartment constant="true" id="nuc" name="nuc" size="50000" spatialDimensions="3" units="um3">
-            <spatial:compartmentMapping spatial:domainType="nuc_domainType" spatial:id="nucnuc" spatial:unitSize="1"/>
+            <spatial:compartmentMapping spatial:domainType="nuc" spatial:id="nucnuc" spatial:unitSize="1"/>
             <annotation>
                <cellorganizer/>
             </annotation>
          </compartment>
          <compartment constant="true" id="vesicle" name="vesicle" size="50000" spatialDimensions="3" units="um3">
-            <spatial:compartmentMapping spatial:domainType="vesicle_domainType" spatial:id="vesiclevesicle" spatial:unitSize="1"/>
+            <spatial:compartmentMapping spatial:domainType="vesicle" spatial:id="vesiclevesicle" spatial:unitSize="1"/>
             <annotation>
                <cellorganizer/>
             </annotation>

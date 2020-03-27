@@ -3,7 +3,7 @@
    <model areaUnits="um2" id="CellOrganizer2_7" lengthUnits="um" name="CellOrganizer2_7" substanceUnits="molecules" timeUnits="s" volumeUnits="um3">
       <spatial:geometry spatial:coordinateSystem="cartesian">
          <spatial:listOfAdjacentDomains>
-            <spatial:adjacentDomains spatial:domain1="EC1" spatial:domain2="cell1" spatial:id="EC1_cell1"/>
+            <spatial:adjacentDomains spatial:domain1="EC0" spatial:domain2="cell1" spatial:id="EC0_cell1"/>
          </spatial:listOfAdjacentDomains>
          <spatial:listOfCoordinateComponents>
             <spatial:coordinateComponent spatial:id="x" spatial:type="cartesianX" spatial:unit="um">
@@ -32,8 +32,6 @@
             <spatial:domainType spatial:id="cell" spatial:spatialDimensions="3"/>
          </spatial:listOfDomainTypes>
          <spatial:listOfGeometryDefinitions>
-            <spatial:mixedGeometry spatial:id="id055101043048054" spatial:isActive="true">
-               <spatial:listOfGeometryDefinitions>
                   <spatial:parametricGeometry spatial:id="id057101043048054" spatial:isActive="true">
                      <spatial:spatialPoints spatial:arrayDataLength="3933" spatial:compression="uncompressed">
 962.7716 962.7716 -0.2037175
@@ -1349,7 +1347,7 @@
 1027.8044 1027.8044 4.4885225
 </spatial:spatialPoints>
                      <spatial:listOfParametricObjects>
-                        <spatial:parametricObject spatial:compression="uncompressed" spatial:domainType="cell" spatial:id="cell1_mesh" spatial:pointIndexLength="7161" spatial:polygonType="triangle">
+                        <spatial:parametricObject spatial:compression="uncompressed" spatial:domainType="cell" spatial:id="cell1_mesh" spatial:pointIndexLength="7155" spatial:polygonType="triangle">
 1 1260 48
 48 1260 118
 118 1260 149
@@ -1601,7 +1599,7 @@
 1261 1240 1242
 1261 1242 1262
 1262 1242 1263
-1239 1311 1308
+1239 0 1308
 101 69 102
 125 101 126
 187 125 188
@@ -3619,7 +3617,6 @@
 1084 1102 1051
 1100 1115 1083
 1100 1083 1102
-1082 1113 1150
 1181 1150 1182
 1181 1182 1248
 1248 1182 1230
@@ -3724,7 +3721,6 @@
 879 915 1083
 1083 915 1051
 915 988 1051
-1113 1082 1150
 1150 1289 1182
 1083 1051 1102
 1289 1083 1183
@@ -3740,8 +3736,6 @@
 </spatial:parametricObject>
                      </spatial:listOfParametricObjects>
                   </spatial:parametricGeometry>
-               </spatial:listOfGeometryDefinitions>
-            </spatial:mixedGeometry>
          </spatial:listOfGeometryDefinitions>
       </spatial:geometry>
       <listOfUnitDefinitions>
@@ -3773,13 +3767,13 @@
       </listOfUnitDefinitions>
       <listOfCompartments>
          <compartment constant="true" id="EC" name="EC" size="50000" spatialDimensions="3" units="um3">
-            <spatial:compartmentMapping spatial:domainType="EC_domainType" spatial:id="ECEC" spatial:unitSize="1"/>
+            <spatial:compartmentMapping spatial:domainType="EC" spatial:id="ECEC" spatial:unitSize="1"/>
             <annotation>
                <cellorganizer/>
             </annotation>
          </compartment>
          <compartment constant="true" id="cell" name="cell" size="50000" spatialDimensions="3" units="um3">
-            <spatial:compartmentMapping spatial:domainType="cell_domainType" spatial:id="cellcell" spatial:unitSize="1"/>
+            <spatial:compartmentMapping spatial:domainType="cell" spatial:id="cellcell" spatial:unitSize="1"/>
             <annotation>
                <cellorganizer/>
             </annotation>

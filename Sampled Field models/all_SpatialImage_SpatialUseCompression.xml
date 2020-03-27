@@ -3,7 +3,7 @@
    <model areaUnits="um2" id="CellOrganizer2_7" lengthUnits="um" name="CellOrganizer2_7" substanceUnits="molecules" timeUnits="s" volumeUnits="um3">
       <spatial:geometry spatial:coordinateSystem="cartesian">
          <spatial:listOfAdjacentDomains>
-            <spatial:adjacentDomains spatial:domain1="cell1" spatial:domain2="nuc1" spatial:id="cell1_nuc1"/>
+            <spatial:adjacentDomains spatial:domain1="cell_domain" spatial:domain2="nuc_domain" spatial:id="cell1_nuc1"/>
          </spatial:listOfAdjacentDomains>
          <spatial:listOfCoordinateComponents>
             <spatial:coordinateComponent spatial:id="x" spatial:type="cartesianX" spatial:unit="um">

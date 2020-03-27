@@ -3,7 +3,7 @@
    <model areaUnits="um2" id="CellOrganizer2_7" lengthUnits="um" name="CellOrganizer2_7" substanceUnits="molecules" timeUnits="s" volumeUnits="um3">
       <spatial:geometry spatial:coordinateSystem="cartesian">
          <spatial:listOfAdjacentDomains>
-            <spatial:adjacentDomains spatial:domain1="EC1" spatial:domain2="cell1" spatial:id="EC1_cell1"/>
+            <spatial:adjacentDomains spatial:domain1="EC0" spatial:domain2="cell1" spatial:id="EC0_cell1"/>
             <spatial:adjacentDomains spatial:domain1="cell1" spatial:domain2="nuc1" spatial:id="cell1_nuc1"/>
          </spatial:listOfAdjacentDomains>
          <spatial:listOfCoordinateComponents>
@@ -35,8 +35,6 @@
             <spatial:domainType spatial:id="cell" spatial:spatialDimensions="3"/>
          </spatial:listOfDomainTypes>
          <spatial:listOfGeometryDefinitions>
-            <spatial:mixedGeometry spatial:id="id055101043048054" spatial:isActive="true">
-               <spatial:listOfGeometryDefinitions>
                   <spatial:parametricGeometry spatial:id="id057101043048054" spatial:isActive="true">
                      <spatial:spatialPoints spatial:arrayDataLength="171" spatial:compression="uncompressed">
 97.902 77.78848 0.1995525
@@ -140,8 +138,8 @@
 7 52 56
 25 2 1
 36 27 23
-56 57 45
-45 57 51
+56 0 45
+45 0 51
 7 13 8
 25 1 29
 26 25 29
@@ -157,9 +155,9 @@
 1 3 4
 8 13 14
 46 47 55
-55 47 57
-57 47 44
-51 57 44
+55 47 0
+0 47 44
+51 0 44
 51 44 43
 4 5 9
 47 41 48
@@ -218,8 +216,6 @@
 </spatial:parametricObject>
                      </spatial:listOfParametricObjects>
                   </spatial:parametricGeometry>
-               </spatial:listOfGeometryDefinitions>
-            </spatial:mixedGeometry>
          </spatial:listOfGeometryDefinitions>
       </spatial:geometry>
       <listOfUnitDefinitions>
@@ -251,19 +247,19 @@
       </listOfUnitDefinitions>
       <listOfCompartments>
          <compartment constant="true" id="EC" name="EC" size="50000" spatialDimensions="3" units="um3">
-            <spatial:compartmentMapping spatial:domainType="EC_domainType" spatial:id="ECEC" spatial:unitSize="1"/>
+            <spatial:compartmentMapping spatial:domainType="EC" spatial:id="ECEC" spatial:unitSize="1"/>
             <annotation>
                <cellorganizer/>
             </annotation>
          </compartment>
          <compartment constant="true" id="cell" name="cell" size="50000" spatialDimensions="3" units="um3">
-            <spatial:compartmentMapping spatial:domainType="cell_domainType" spatial:id="cellcell" spatial:unitSize="1"/>
+            <spatial:compartmentMapping spatial:domainType="cell" spatial:id="cellcell" spatial:unitSize="1"/>
             <annotation>
                <cellorganizer/>
             </annotation>
          </compartment>
          <compartment constant="true" id="nuc" name="nuc" size="50000" spatialDimensions="3" units="um3">
-            <spatial:compartmentMapping spatial:domainType="nuc_domainType" spatial:id="nucnuc" spatial:unitSize="1"/>
+            <spatial:compartmentMapping spatial:domainType="nuc" spatial:id="nucnuc" spatial:unitSize="1"/>
             <annotation>
                <cellorganizer/>
             </annotation>

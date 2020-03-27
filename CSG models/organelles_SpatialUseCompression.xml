@@ -3,11 +3,11 @@
    <model areaUnits="um2" id="CellOrganizer2_7" lengthUnits="um" name="CellOrganizer2_7" substanceUnits="molecules" timeUnits="s" volumeUnits="um3">
       <spatial:geometry spatial:coordinateSystem="cartesian">
          <spatial:listOfAdjacentDomains>
-            <spatial:adjacentDomains spatial:domain1="EC1" spatial:domain2="vesicle1" spatial:id="EC1_vesicle1"/>
-            <spatial:adjacentDomains spatial:domain1="EC1" spatial:domain2="vesicle2" spatial:id="EC1_vesicle2"/>
-            <spatial:adjacentDomains spatial:domain1="EC1" spatial:domain2="vesicle3" spatial:id="EC1_vesicle3"/>
-            <spatial:adjacentDomains spatial:domain1="EC1" spatial:domain2="vesicle4" spatial:id="EC1_vesicle4"/>
-            <spatial:adjacentDomains spatial:domain1="EC1" spatial:domain2="vesicle5" spatial:id="EC1_vesicle5"/>
+            <spatial:adjacentDomains spatial:domain1="EC0" spatial:domain2="vesicle1" spatial:id="EC0_vesicle1"/>
+            <spatial:adjacentDomains spatial:domain1="EC0" spatial:domain2="vesicle2" spatial:id="EC0_vesicle2"/>
+            <spatial:adjacentDomains spatial:domain1="EC0" spatial:domain2="vesicle3" spatial:id="EC0_vesicle3"/>
+            <spatial:adjacentDomains spatial:domain1="EC0" spatial:domain2="vesicle4" spatial:id="EC0_vesicle4"/>
+            <spatial:adjacentDomains spatial:domain1="EC0" spatial:domain2="vesicle0" spatial:id="EC0_vesicle0"/>
          </spatial:listOfAdjacentDomains>
          <spatial:listOfCoordinateComponents>
             <spatial:coordinateComponent spatial:id="x" spatial:type="cartesianX" spatial:unit="um">
@@ -60,11 +60,9 @@
             <spatial:domainType spatial:id="vesicle" spatial:spatialDimensions="3"/>
          </spatial:listOfDomainTypes>
          <spatial:listOfGeometryDefinitions>
-            <spatial:mixedGeometry spatial:id="id055101043048054" spatial:isActive="true">
-               <spatial:listOfGeometryDefinitions>
                   <spatial:csGeometry spatial:id="csgid050101043048054" spatial:isActive="true">
                      <spatial:listOfCSGObjects>
-                        <spatial:csgObject spatial:domainType="vesicle" spatial:id="vesicle1" spatial:ordinal="2">
+                        <spatial:csgObject spatial:domainType="vesicle" spatial:id="vesicle1" spatial:ordinal="1">
                            <spatial:csgTranslation spatial:id="translation" spatial:translateX="18.4567" spatial:translateY="7.35" spatial:translateZ="0.294">
                               <spatial:csgRotation spatial:id="rotation" spatial:rotateAngleInRadians="1.2776" spatial:rotateX="0" spatial:rotateY="0" spatial:rotateZ="0">
                                  <spatial:csgScale spatial:id="scale" spatial:scaleX="0.29257" spatial:scaleY="0.32434" spatial:scaleZ="0.28152">
@@ -82,7 +80,7 @@
                               </spatial:csgRotation>
                            </spatial:csgTranslation>
                         </spatial:csgObject>
-                        <spatial:csgObject spatial:domainType="vesicle" spatial:id="vesicle3" spatial:ordinal="2">
+                        <spatial:csgObject spatial:domainType="vesicle" spatial:id="vesicle3" spatial:ordinal="3">
                            <spatial:csgTranslation spatial:id="translation" spatial:translateX="13.23" spatial:translateY="4.5733" spatial:translateZ="0.392">
                               <spatial:csgRotation spatial:id="rotation" spatial:rotateAngleInRadians="1.9844" spatial:rotateX="0" spatial:rotateY="0" spatial:rotateZ="0">
                                  <spatial:csgScale spatial:id="scale" spatial:scaleX="0.37818" spatial:scaleY="0.18901" spatial:scaleZ="0.20631">
@@ -91,7 +89,7 @@
                               </spatial:csgRotation>
                            </spatial:csgTranslation>
                         </spatial:csgObject>
-                        <spatial:csgObject spatial:domainType="vesicle" spatial:id="vesicle4" spatial:ordinal="2">
+                        <spatial:csgObject spatial:domainType="vesicle" spatial:id="vesicle4" spatial:ordinal="4">
                            <spatial:csgTranslation spatial:id="translation" spatial:translateX="4.0833" spatial:translateY="11.27" spatial:translateZ="0.931">
                               <spatial:csgRotation spatial:id="rotation" spatial:rotateAngleInRadians="1.4134" spatial:rotateX="0" spatial:rotateY="0" spatial:rotateZ="0">
                                  <spatial:csgScale spatial:id="scale" spatial:scaleX="0.11102" spatial:scaleY="0.11118" spatial:scaleZ="0.076967">
@@ -100,7 +98,7 @@
                               </spatial:csgRotation>
                            </spatial:csgTranslation>
                         </spatial:csgObject>
-                        <spatial:csgObject spatial:domainType="vesicle" spatial:id="vesicle5" spatial:ordinal="2">
+                        <spatial:csgObject spatial:domainType="vesicle" spatial:id="vesicle5" spatial:ordinal="5">
                            <spatial:csgTranslation spatial:id="translation" spatial:translateX="18.2933" spatial:translateY="8.82" spatial:translateZ="1.176">
                               <spatial:csgRotation spatial:id="rotation" spatial:rotateAngleInRadians="2.1695" spatial:rotateX="0" spatial:rotateY="0" spatial:rotateZ="0">
                                  <spatial:csgScale spatial:id="scale" spatial:scaleX="0.28199" spatial:scaleY="0.20733" spatial:scaleZ="0.035757">
@@ -111,8 +109,6 @@
                         </spatial:csgObject>
                      </spatial:listOfCSGObjects>
                   </spatial:csGeometry>
-               </spatial:listOfGeometryDefinitions>
-            </spatial:mixedGeometry>
          </spatial:listOfGeometryDefinitions>
       </spatial:geometry>
       <listOfUnitDefinitions>
@@ -144,31 +140,13 @@
       </listOfUnitDefinitions>
       <listOfCompartments>
          <compartment constant="true" id="EC" name="EC" size="50000" spatialDimensions="3" units="um3">
-            <spatial:compartmentMapping spatial:domainType="EC_domainType" spatial:id="ECEC" spatial:unitSize="1"/>
-            <annotation>
-               <cellorganizer/>
-            </annotation>
-         </compartment>
-         <compartment constant="true" id="cell" name="cell" size="50000" spatialDimensions="3" units="um3">
-            <spatial:compartmentMapping spatial:domainType="cell_domainType" spatial:id="cellcell" spatial:unitSize="1"/>
-            <annotation>
-               <cellorganizer/>
-            </annotation>
-         </compartment>
-         <compartment constant="true" id="nuc" name="nuc" size="50000" spatialDimensions="3" units="um3">
-            <spatial:compartmentMapping spatial:domainType="nuc_domainType" spatial:id="nucnuc" spatial:unitSize="1"/>
-            <annotation>
-               <cellorganizer/>
-            </annotation>
-         </compartment>
-         <compartment constant="true" id="primitiveOnly" name="primitiveOnly" size="50000" spatialDimensions="3" units="um3">
-            <spatial:compartmentMapping spatial:domainType="primitiveOnly_domainType" spatial:id="primitiveOnlyprimitiveOnly" spatial:unitSize="1"/>
+            <spatial:compartmentMapping spatial:domainType="EC" spatial:id="ECEC" spatial:unitSize="1"/>
             <annotation>
                <cellorganizer/>
             </annotation>
          </compartment>
          <compartment constant="true" id="vesicle" name="vesicle" size="50000" spatialDimensions="3" units="um3">
-            <spatial:compartmentMapping spatial:domainType="vesicle_domainType" spatial:id="vesiclevesicle" spatial:unitSize="1"/>
+            <spatial:compartmentMapping spatial:domainType="vesicle" spatial:id="vesiclevesicle" spatial:unitSize="1"/>
             <annotation>
                <cellorganizer/>
             </annotation>

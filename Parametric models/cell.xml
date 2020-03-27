@@ -3,7 +3,7 @@
    <model areaUnits="um2" id="CellOrganizer2_7" lengthUnits="um" name="CellOrganizer2_7" substanceUnits="molecules" timeUnits="s" volumeUnits="um3">
       <spatial:geometry spatial:coordinateSystem="cartesian">
          <spatial:listOfAdjacentDomains>
-            <spatial:adjacentDomains spatial:domain1="EC1" spatial:domain2="cell1" spatial:id="EC1_cell1"/>
+            <spatial:adjacentDomains spatial:domain1="EC0" spatial:domain2="cell1" spatial:id="EC0_cell1"/>
          </spatial:listOfAdjacentDomains>
          <spatial:listOfCoordinateComponents>
             <spatial:coordinateComponent spatial:id="x" spatial:type="cartesianX" spatial:unit="um">
@@ -32,8 +32,6 @@
             <spatial:domainType spatial:id="cell" spatial:spatialDimensions="3"/>
          </spatial:listOfDomainTypes>
          <spatial:listOfGeometryDefinitions>
-            <spatial:mixedGeometry spatial:id="id052101043048054" spatial:isActive="true">
-               <spatial:listOfGeometryDefinitions>
                   <spatial:parametricGeometry spatial:id="id050101043048054" spatial:isActive="true">
                      <spatial:spatialPoints spatial:arrayDataLength="6936" spatial:compression="uncompressed">
 962.7716 962.7716 -0.3188675
@@ -3181,7 +3179,7 @@
 1955 1953 1959
 2043 1959 2044
 1906 1999 1907
-2117 2098 2312
+2117 2098 0
 1509 1468 1510
 1959 1953 1960
 1959 1960 2044
@@ -3198,7 +3196,7 @@
 1898 2000 1999
 1999 2000 1907
 2058 2064 2068
-2098 2311 2312
+2098 2311 0
 1356 1328 1332
 1356 1332 1361
 1356 1361 1389
@@ -3230,7 +3228,7 @@
 2068 1984 1898
 1965 1966 2195
 2068 2064 2063
-2117 2312 2052
+2117 0 2052
 1332 1328 1333
 1361 1332 1333
 1389 1429 1469
@@ -3309,7 +3307,7 @@
 1696 1630 1631
 1697 1698 1763
 2052 2053 2059
-2052 2312 2053
+2052 0 2053
 1245 1241 1246
 1268 1245 1246
 1696 1631 1677
@@ -3449,7 +3447,7 @@
 1838 1835 1839
 1978 1973 1979
 1978 1979 1891
-2053 2312 1973
+2053 0 1973
 1557 1593 1592
 1633 1592 1593
 1835 1893 1836
@@ -3495,7 +3493,7 @@
 1751 1749 1712
 1712 1749 1713
 1836 1837 1786
-2312 1974 1973
+0 1974 1973
 1226 1210 1286
 1313 1286 1364
 1836 1832 1837
@@ -3719,7 +3717,7 @@
 516 478 544
 1658 1708 1659
 1658 1659 1663
-1974 2312 1831
+1974 0 1831
 262 184 185
 517 262 337
 670 633 673
@@ -3832,7 +3830,7 @@
 1735 1744 1703
 1735 1788 1744
 1781 1873 1782
-2312 1873 1831
+0 1873 1831
 1123 1121 1124
 1126 1123 1124
 1133 1126 1127
@@ -4623,7 +4621,7 @@
 771 772 769
 1525 1446 1410
 1410 1446 1407
-2312 1874 1873
+0 1874 1873
 437 115 35
 82 164 83
 83 164 165
@@ -5187,12 +5185,12 @@
 1689 1818 1741
 1819 1818 1689
 1819 1874 1818
-2312 2028 1874
+0 2028 1874
 1866 2025 2141
-2312 2169 2028
+0 2169 2028
 1866 2141 2195
 2197 2292 2225
-2312 2245 2169
+0 2245 2169
 39 40 122
 122 40 123
 40 41 123
@@ -5416,7 +5414,7 @@
 2306 2272 2274
 2306 2274 2309
 2216 2245 2309
-2309 2245 2312
+2309 2245 0
 124 123 125
 123 41 125
 125 41 42
@@ -6616,8 +6614,6 @@
 </spatial:parametricObject>
                      </spatial:listOfParametricObjects>
                   </spatial:parametricGeometry>
-               </spatial:listOfGeometryDefinitions>
-            </spatial:mixedGeometry>
          </spatial:listOfGeometryDefinitions>
       </spatial:geometry>
       <listOfUnitDefinitions>
@@ -6649,13 +6645,13 @@
       </listOfUnitDefinitions>
       <listOfCompartments>
          <compartment constant="true" id="EC" name="EC" size="50000" spatialDimensions="3" units="um3">
-            <spatial:compartmentMapping spatial:domainType="EC_domainType" spatial:id="ECEC" spatial:unitSize="1"/>
+            <spatial:compartmentMapping spatial:domainType="EC" spatial:id="ECEC" spatial:unitSize="1"/>
             <annotation>
                <cellorganizer/>
             </annotation>
          </compartment>
          <compartment constant="true" id="cell" name="cell" size="50000" spatialDimensions="3" units="um3">
-            <spatial:compartmentMapping spatial:domainType="cell_domainType" spatial:id="cellcell" spatial:unitSize="1"/>
+            <spatial:compartmentMapping spatial:domainType="cell" spatial:id="cellcell" spatial:unitSize="1"/>
             <annotation>
                <cellorganizer/>
             </annotation>
